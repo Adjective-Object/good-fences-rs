@@ -1,0 +1,19 @@
+[package]
+name = "good-fences-rs"
+version = "0.1.0"
+authors = ["Maxwell Huang-Hobbs <mhuan13@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "good_fences_rs"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.5.1"
+
+[dependencies]
+neon = "0.5.1"
+good-fences-rs-core = { git = "https://github.com/Adjective-Object/good-fences-rs-core.git", rev = "a6d00f6e4aa2b65516d47f961f596de95323dccc"}

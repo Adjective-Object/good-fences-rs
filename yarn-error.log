@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/bin/node /home/adjective/.yarn/bin/yarn.js
+
+PATH: 
+  /home/adjective/.cargo/bin:/home/adjective/.yarn/bin:/home/adjective/.cargo/bin:/home/adjective/.nix-profile/bin:/home/adjective/.local/bin:/home/adjective/bin:/home/adjective/.cargo/bin:/home/adjective/.yarn/bin:/usr/local/bin:/usr/bin:/bin:./node_modules/.bin/:/home/adjective/Software/flutter/bin:/home/adjective/Software/flutter/bin/cache/dart-sdk/bin:/home/adjective/Software/android-sdk/platform-tools/:/home/adjective/.cargo/bin/:/home/adjective/.pub-cache/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:./node_modules/.bin/:/home/adjective/Software/flutter/bin:/home/adjective/Software/flutter/bin/cache/dart-sdk/bin:/home/adjective/Software/android-sdk/platform-tools/:/home/adjective/.cargo/bin/:/home/adjective/.pub-cache/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  13.14.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/adjective/Projects/good-fences-rs/package.json: Unexpected token m in JSON at position 134
+      at JSON.parse (<anonymous>)
+      at /home/adjective/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/adjective/.yarn/lib/cli.js:304:30)
+      at /home/adjective/.yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "good-fences-rs",
+    "version": "0.1.0",
+    "description": "",
+    "main": "lib/index.js",
+    "author": "Maxwell Huang-Hobbs <"mhuan13@gmail.com">",
+    "license": "MIT",
+    "dependencies": {
+      "neon-cli": "^0.5.1"
+    },
+    "scripts": {
+      "install": "neon build"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
